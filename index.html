@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050711">
+  <title>SPACE EXPLORER | Discover the Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <header class="header">
+    <a class="logo" href="#home">✦ SPACE<span>EXPLORER</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a><a href="#planets">Planets</a><a href="#missions">Missions</a><a href="#universe">Universe</a>
+    </nav>
+    <a class="header-btn" href="#planets">EXPLORE ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><i></i> WELCOME TO THE INFINITE UNIVERSE</div>
+        <h1>EXPLORE THE<br><span>UNIVERSE</span></h1>
+        <p class="lead">Discover mysterious planets, explore distant galaxies and experience the beauty of our endless universe.</p>
+        <div class="actions"><a class="primary-btn" href="#planets">START EXPLORING →</a><a class="secondary-btn" href="#universe">DISCOVER MORE ↗</a></div>
+        <div class="stats"><div><b>8</b><small>PLANETS</small></div><div><b>100B+</b><small>GALAXIES</small></div><div><b>∞</b><small>POSSIBILITIES</small></div></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="earth"></div><div class="moon"></div>
+        <div class="planet-label label-a">EARTH / 001</div><div class="planet-label label-b">MILKY WAY</div>
+        <div class="earth-caption"><small>OUR HOME PLANET</small><h2>EARTH</h2><p>Third planet from the Sun</p></div>
+      </div>
+      <div class="scroll-hint">↓ &nbsp; SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="section" id="planets">
+      <div class="section-heading"><div><span class="tag">01 / SOLAR SYSTEM</span><h2>EXPLORE <span>PLANETS</span></h2></div><p>Eight worlds. Countless mysteries.<br>One incredible solar system.</p></div>
+      <div class="planet-grid">
+        <article class="planet-card" data-planet="Mercury"><div class="planet mercury"></div><small>01 / TERRESTRIAL</small><h3>MERCURY</h3><p>The smallest planet, closest to the Sun.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+        <article class="planet-card" data-planet="Venus"><div class="planet venus"></div><small>02 / TERRESTRIAL</small><h3>VENUS</h3><p>A world of extreme heat and thick clouds.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+        <article class="planet-card featured" data-planet="Earth"><div class="planet earth-card"></div><small>03 / TERRESTRIAL</small><h3>EARTH</h3><p>Our beautiful home, full of life.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+        <article class="planet-card" data-planet="Mars"><div class="planet mars"></div><small>04 / TERRESTRIAL</small><h3>MARS</h3><p>The mysterious red planet.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+        <article class="planet-card" data-planet="Jupiter"><div class="planet jupiter"></div><small>05 / GAS GIANT</small><h3>JUPITER</h3><p>The largest planet in our solar system.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+        <article class="planet-card" data-planet="Saturn"><div class="planet saturn"></div><small>06 / GAS GIANT</small><h3>SATURN</h3><p>Famous for its spectacular rings.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+        <article class="planet-card" data-planet="Uranus"><div class="planet uranus"></div><small>07 / ICE GIANT</small><h3>URANUS</h3><p>A distant world of icy blue atmosphere.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+        <article class="planet-card" data-planet="Neptune"><div class="planet neptune"></div><small>08 / ICE GIANT</small><h3>NEPTUNE</h3><p>The farthest major planet from the Sun.</p><button class="details-btn">EXPLORE PLANET ↗</button></article>
+      </div>
+    </section>
+
+    <section class="mission" id="missions"><div><span class="tag">02 / SPACE MISSIONS</span><h2>BEYOND<br><span>THE LIMITS</span></h2><p>Humanity has always dreamed of exploring the unknown. Discover the incredible missions that take us closer to the stars.</p><a class="primary-btn" href="#universe">DISCOVER THE UNKNOWN ↗</a></div></section>
+    <section class="universe" id="universe"><span class="tag">03 / THE INFINITE</span><h2>THE UNIVERSE<br>IS <span>WAITING</span></h2><p>Somewhere, something incredible is waiting to be known.</p><a class="primary-btn" href="#home">BACK TO THE TOP ↑</a></section>
+  </main>
+
+  <footer><a class="logo" href="#home">✦ SPACE<span>EXPLORER</span></a><p>EXPLORE THE UNKNOWN. DISCOVER THE IMPOSSIBLE.</p><small>© 2026 SPACE EXPLORER</small></footer>
+
+  <div class="modal" id="planetModal" aria-hidden="true"><div class="modal-box" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose" aria-label="Close">×</button><span class="tag">PLANET INFORMATION</span><h2 id="modalTitle">EARTH</h2><p id="modalDescription"></p><div id="modalFacts"></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
